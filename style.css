@@ -1,0 +1,33 @@
+.main-menu {
+    margin: 10px 0 0 10px;
+}
+
+.main-li {
+    float: left;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    background-color:blueviolet;
+    color: white;
+    padding: 10px 20px;
+}
+
+a:hover {
+    background-color: red;
+}
+
+.minor-menu, .minor-menu-2 {
+    display: none;
+}
+
+.main-li:hover>.minor-menu, .item-1:hover>.minor-menu-2 {
+    display: block;
+}
+
+.main-menu::after {
+    content: '';
+    clear: both;
+    display: block;
+}
